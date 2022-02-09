@@ -1,0 +1,1288 @@
+{
+	"info": {
+		"_postman_id": "0a595912-0e4f-4f94-a398-171ddbc0c09b",
+		"name": "JobbApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Manage",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3NmIwZGIzLWYwODEtNDk3NS1hZmUwLWNmODg1OTU4M2JkOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiZTc2YjBkYjMtZjA4MS00OTc1LWFmZTAtY2Y4ODU5NTgzYmQ5IiwianRpIjoiM2NiNzg5YTQtYmI3My00YTdjLTgyOWEtNWJlMDJmZjg1MzVlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTk2MDIwMzMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEifQ.PB_Ot2jXjgfQiiFGu3M_KtaLyogHkSrpRgUJqapfxM8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"UserName\":\"SuperAdmin\",\r\n    \"Password\":\"Admin1234\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/account/login",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"account",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3NmIwZGIzLWYwODEtNDk3NS1hZmUwLWNmODg1OTU4M2JkOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiZTc2YjBkYjMtZjA4MS00OTc1LWFmZTAtY2Y4ODU5NTgzYmQ5IiwianRpIjoiNDY0NDEwNmItYjhlMy00YWIyLTk0OGYtMjIxMGJmZDFjNTI0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTk2ODc3NjYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEifQ.MlThlxi5FsDKPVVQ60SEc4KFKWARYlN7DHJ8TG3UqrA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\":\"Banking\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/category/create",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"category",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3NmIwZGIzLWYwODEtNDk3NS1hZmUwLWNmODg1OTU4M2JkOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiZTc2YjBkYjMtZjA4MS00OTc1LWFmZTAtY2Y4ODU5NTgzYmQ5IiwianRpIjoiNDY0NDEwNmItYjhlMy00YWIyLTk0OGYtMjIxMGJmZDFjNTI0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTk2ODc3NjYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEifQ.MlThlxi5FsDKPVVQ60SEc4KFKWARYlN7DHJ8TG3UqrA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \r\n    \"Name\":\"Finance/Acconting\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/category/1",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"category",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/category/3",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"category",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}manage/category/1",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"category",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}manage/category/",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "City",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3NmIwZGIzLWYwODEtNDk3NS1hZmUwLWNmODg1OTU4M2JkOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiZTc2YjBkYjMtZjA4MS00OTc1LWFmZTAtY2Y4ODU5NTgzYmQ5IiwianRpIjoiNDY0NDEwNmItYjhlMy00YWIyLTk0OGYtMjIxMGJmZDFjNTI0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTk2ODc3NjYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEifQ.MlThlxi5FsDKPVVQ60SEc4KFKWARYlN7DHJ8TG3UqrA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\":\"Roma\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/city/create",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"city",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3NmIwZGIzLWYwODEtNDk3NS1hZmUwLWNmODg1OTU4M2JkOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiZTc2YjBkYjMtZjA4MS00OTc1LWFmZTAtY2Y4ODU5NTgzYmQ5IiwianRpIjoiNDY0NDEwNmItYjhlMy00YWIyLTk0OGYtMjIxMGJmZDFjNTI0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTk2ODc3NjYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEifQ.MlThlxi5FsDKPVVQ60SEc4KFKWARYlN7DHJ8TG3UqrA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\":\"Bristol\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/city/1",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"city",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/city/1",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"city",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}manage/city",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"city"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}manage/city",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"city"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Country",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3NmIwZGIzLWYwODEtNDk3NS1hZmUwLWNmODg1OTU4M2JkOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiZTc2YjBkYjMtZjA4MS00OTc1LWFmZTAtY2Y4ODU5NTgzYmQ5IiwianRpIjoiNDY0NDEwNmItYjhlMy00YWIyLTk0OGYtMjIxMGJmZDFjNTI0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTk2ODc3NjYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEifQ.MlThlxi5FsDKPVVQ60SEc4KFKWARYlN7DHJ8TG3UqrA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\":\"Germany\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/country/create",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"country",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3NmIwZGIzLWYwODEtNDk3NS1hZmUwLWNmODg1OTU4M2JkOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiZTc2YjBkYjMtZjA4MS00OTc1LWFmZTAtY2Y4ODU5NTgzYmQ5IiwianRpIjoiNDY0NDEwNmItYjhlMy00YWIyLTk0OGYtMjIxMGJmZDFjNTI0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTk2ODc3NjYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEifQ.MlThlxi5FsDKPVVQ60SEc4KFKWARYlN7DHJ8TG3UqrA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\":\"Azerbaijan\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/country/1",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"country",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{jobbapi}}manage/country/1",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"country",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}manage/country/1",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"country",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}manage/country/all",
+									"host": [
+										"{{jobbapi}}manage"
+									],
+									"path": [
+										"country",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FullName\":\"Elvin Osmanov\",\r\n    \"Email\":\"lwinmcg11@gmail.com\",\r\n    \"Password\":\"Elvin4567\",\r\n    \"ConfirmPassword\":\"Elvin4567\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}account/register",
+									"host": [
+										"{{jobbapi}}account"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImQwYTliMjY2LTQ3NGUtNGUyMy04YTZlLWE1ZmE4OGJhOGNkYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJsd2lubWNnMTFAZ21haWwuY29tIiwic3ViIjoiZDBhOWIyNjYtNDc0ZS00ZTIzLThhNmUtYTVmYTg4YmE4Y2RhIiwianRpIjoiOWM5OWUwZDItOTA4NS00ZWZjLTg2MWMtYjk4ZmYzZTkxOTM3IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibHdpbm1jZzExQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyMDU1MTUwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSJ9.S7FF0lsx40PqKpcGRT0I0BPPzxCzOqPYvaBDWxQCP0Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Email\":\"lwinmcg11@gmail.com\",\r\n    \"Password\":\"Elvin4567\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}account/login",
+									"host": [
+										"{{jobbapi}}account"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdatePass",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImU3NmIwZGIzLWYwODEtNDk3NS1hZmUwLWNmODg1OTU4M2JkOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJTdXBlckFkbWluIiwic3ViIjoiZTc2YjBkYjMtZjA4MS00OTc1LWFmZTAtY2Y4ODU5NTgzYmQ5IiwianRpIjoiMTY3YTYxNWMtYWNiMC00MzliLTk2ZDctNWI3Y2I0NDE0Mjc2IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTk2MTYzNjgsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEifQ.nPHFl4awuf4QkeZvroSpLP7N5JadB96lG_sI4RVAMds",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \r\n    \"CurrentPassword\":\"Elvin1234\",\r\n    \"NewPassword\":\"Elvin12345\",\r\n    \"ConfirmNewPassword\":\"Elvin12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}account/updatepassword",
+									"host": [
+										"{{jobbapi}}account"
+									],
+									"path": [
+										"updatepassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateDetails",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbHZpbmZvQGdtYWlsLmNvbSIsInN1YiI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImp0aSI6IjFjM2U4ZDFiLWVmYzUtNDg0MS05YzU2LTc4NGVhOTdlOWQ4MSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVsdmluZm9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWVtYmVyIiwiZXhwIjoxNjE5NjIyNjExLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzkxIn0.Avgqc9Dy7xGk5saMxKzvCwXOiUePnY6OfOk-I-b0vSc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "File",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "Email",
+											"value": "elvin101@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "Username",
+											"value": "elvin101",
+											"type": "text"
+										},
+										{
+											"key": "PhoneNumber",
+											"value": "+151561156545",
+											"type": "text"
+										},
+										{
+											"key": "Desc",
+											"value": "srfnijnfvjid",
+											"type": "text"
+										},
+										{
+											"key": "Address",
+											"value": "ifvnidnfifskfkcm",
+											"type": "text"
+										},
+										{
+											"key": "Occupation",
+											"value": "Student",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{jobbapi}}account/updatedetails",
+									"host": [
+										"{{jobbapi}}account"
+									],
+									"path": [
+										"updatedetails"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Company",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbHZpbjEwMSIsInN1YiI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImp0aSI6IjQ4MWM5NzY2LTI2ZWQtNGQyYi04OWQzLTRkN2JhOTI1N2M4ZCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVsdmluMTAxQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYxOTY4MTQ5OSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSJ9.5iA6rT1BoHJfWANqDiQk7R6UonDDcrIzNvDPUoA-REw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "Name",
+											"value": "Accenture",
+											"type": "text"
+										},
+										{
+											"key": "Email",
+											"value": "bcg@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "Address",
+											"value": "Bristol",
+											"type": "text"
+										},
+										{
+											"key": "Phone",
+											"value": "+77526125545",
+											"type": "text"
+										},
+										{
+											"key": "Category",
+											"value": "Tech",
+											"type": "text"
+										},
+										{
+											"key": "Desc",
+											"value": "best company",
+											"type": "text"
+										},
+										{
+											"key": "File",
+											"type": "file",
+											"src": "/C:/Users/Elvin/Desktop/image/Green Cow Logo 2 (1).jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{jobbapi}}company/create",
+									"host": [
+										"{{jobbapi}}company"
+									],
+									"path": [
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbHZpbjEwMSIsInN1YiI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImp0aSI6IjQ4MWM5NzY2LTI2ZWQtNGQyYi04OWQzLTRkN2JhOTI1N2M4ZCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVsdmluMTAxQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYxOTY4MTQ5OSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSJ9.5iA6rT1BoHJfWANqDiQk7R6UonDDcrIzNvDPUoA-REw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "Name",
+											"value": "BCG consulting",
+											"type": "text"
+										},
+										{
+											"key": "Email",
+											"value": "bcg@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "Address",
+											"value": "london",
+											"type": "text"
+										},
+										{
+											"key": "Phone",
+											"value": "+77526125",
+											"type": "text"
+										},
+										{
+											"key": "Category",
+											"value": "Consulting",
+											"type": "text"
+										},
+										{
+											"key": "Desc",
+											"value": "best company",
+											"type": "text"
+										},
+										{
+											"key": "File",
+											"type": "file",
+											"src": "/C:/Users/Elvin/Desktop/image/shutterstock_1466400995 .jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{jobbapi}}company/1",
+									"host": [
+										"{{jobbapi}}company"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbHZpbjEwMSIsInN1YiI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImp0aSI6IjQ4MWM5NzY2LTI2ZWQtNGQyYi04OWQzLTRkN2JhOTI1N2M4ZCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVsdmluMTAxQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYxOTY4MTQ5OSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSJ9.5iA6rT1BoHJfWANqDiQk7R6UonDDcrIzNvDPUoA-REw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}company/1",
+									"host": [
+										"{{jobbapi}}company"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}company/all",
+									"host": [
+										"{{jobbapi}}company"
+									],
+									"path": [
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}company/2",
+									"host": [
+										"{{jobbapi}}company"
+									],
+									"path": [
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Job",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Title\":\"CTO\",\r\n    \"Address\":\"Roma\",\r\n    \"Salary\":15000,\r\n    \"IsActive\":false,\r\n    \"Desc\":\"Just do your ,job\",\r\n    \"Deadline\":\"2021-05-02\",\r\n    \"Gender\":0,\r\n    \"Qualification\":0,\r\n    \"JonType\":1,\r\n    \"Experience\":2.5,\r\n    \"CategoryId\":2,\r\n    \"CompanyId\":1,\r\n    \"CityId\":2,\r\n    \"CountryId\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}job/create",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Title\":\"CTO\",\r\n    \"Address\":\"Rio de Janeiro\",\r\n    \"Salary\":1000,\r\n    \"IsActive\":false,\r\n    \"Desc\":\"Just do your ,job\",\r\n    \"Deadline\":\"2021-05-02\",\r\n    \"Gender\":0,\r\n    \"Qualification\":0,\r\n    \"JonType\":1,\r\n    \"Experience\":1,\r\n    \"CategoryId\":1,\r\n    \"CompanyId\":1,\r\n    \"CityId\":2,\r\n    \"CountryId\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}job/7",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}job/1",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}job",
+									"host": [
+										"{{jobbapi}}job"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}job/1",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetBrowse",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}job/recent",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"recent"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetRecent",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}job/browse",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"browse"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Filter",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}job/filter",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"filter"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{jobbapi}}job/search",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Apply",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsApplied\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}job/apply/7",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"apply",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Bookmark",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsBookmarked\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}job/bookmark/7",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"bookmark",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetApply",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}job/getapply",
+									"host": [
+										"{{jobbapi}}job"
+									],
+									"path": [
+										"getapply"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Candidate",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImQwYTliMjY2LTQ3NGUtNGUyMy04YTZlLWE1ZmE4OGJhOGNkYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJsd2lubWNnMTFAZ21haWwuY29tIiwic3ViIjoiZDBhOWIyNjYtNDc0ZS00ZTIzLThhNmUtYTVmYTg4YmE4Y2RhIiwianRpIjoiOWM5OWUwZDItOTA4NS00ZWZjLTg2MWMtYjk4ZmYzZTkxOTM3IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibHdpbm1jZzExQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyMDU1MTUwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSJ9.S7FF0lsx40PqKpcGRT0I0BPPzxCzOqPYvaBDWxQCP0Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"JobId\":7,\r\n    \"AppUserId\":\"d0a9b266-474e-4e23-8a6e-a5fa88ba8cda\",\r\n    \"Status\":0\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}candidate/create",
+									"host": [
+										"{{jobbapi}}candidate"
+									],
+									"path": [
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImQwYTliMjY2LTQ3NGUtNGUyMy04YTZlLWE1ZmE4OGJhOGNkYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJsd2lubWNnMTFAZ21haWwuY29tIiwic3ViIjoiZDBhOWIyNjYtNDc0ZS00ZTIzLThhNmUtYTVmYTg4YmE4Y2RhIiwianRpIjoiOWM5OWUwZDItOTA4NS00ZWZjLTg2MWMtYjk4ZmYzZTkxOTM3IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibHdpbm1jZzExQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyMDU1MTUwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSJ9.S7FF0lsx40PqKpcGRT0I0BPPzxCzOqPYvaBDWxQCP0Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}candidate",
+									"host": [
+										"{{jobbapi}}candidate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImQwYTliMjY2LTQ3NGUtNGUyMy04YTZlLWE1ZmE4OGJhOGNkYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJsd2lubWNnMTFAZ21haWwuY29tIiwic3ViIjoiZDBhOWIyNjYtNDc0ZS00ZTIzLThhNmUtYTVmYTg4YmE4Y2RhIiwianRpIjoiOWM5OWUwZDItOTA4NS00ZWZjLTg2MWMtYjk4ZmYzZTkxOTM3IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoibHdpbm1jZzExQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyMDU1MTUwMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSJ9.S7FF0lsx40PqKpcGRT0I0BPPzxCzOqPYvaBDWxQCP0Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"JobId\":7,\r\n    \"AppUserId\":\"d0a9b266-474e-4e23-8a6e-a5fa88ba8cda\",\r\n    \"Status\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{jobbapi}}candidate/3",
+									"host": [
+										"{{jobbapi}}candidate"
+									],
+									"path": [
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJlbHZpbjEwMSIsInN1YiI6ImY1NmViZTcwLWQwOTctNDZmZi05YmRmLThiMDk0MmJhMmY0MSIsImp0aSI6ImFhZDZlYTJmLWMxMTktNDFlMS04MjBjLTMwMmZmMzUxZmIxYyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVsdmluMTAxQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1lbWJlciIsImV4cCI6MTYyMDA1MzUyNywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5MSJ9.2gtoWzVw2aUwl5KZMckJWoMel_zkoVEjPeKnsifmQl8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{jobbapi}}candidate/2",
+									"host": [
+										"{{jobbapi}}candidate"
+									],
+									"path": [
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}candidate/1",
+									"host": [
+										"{{jobbapi}}candidate"
+									],
+									"path": [
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dashboard",
+					"item": [
+						{
+							"name": "GetBookmark",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{jobbapi}}dashboard/getbookmark",
+									"host": [
+										"{{jobbapi}}dashboard"
+									],
+									"path": [
+										"getbookmark"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

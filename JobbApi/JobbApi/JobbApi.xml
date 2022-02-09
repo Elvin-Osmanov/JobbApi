@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JobbApi</name>
+    </assembly>
+    <members>
+        <member name="M:JobbApi.Api.Manage.Controllers.CountryController.Create(JobbApi.Api.Manage.DTOs.CountryCreateDto)">
+            <summary>
+            Create Country
+            </summary>
+            <param name="createDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JobbApi.Api.Manage.Controllers.CountryController.GetAll">
+            <summary>
+            Get all Countries
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

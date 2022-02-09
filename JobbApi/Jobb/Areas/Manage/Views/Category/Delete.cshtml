@@ -1,0 +1,26 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Manage/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model != null)
+{
+
+    <div class="container-fluid">
+        <h1>Delete</h1>
+        <form method="post">
+            <div class="form-group">
+                <h2>Name</h2>
+                <p>@Model.Name</p>
+
+                <h2>Icon</h2>
+                <p>@Html.Raw(Model.Icon)</p>
+
+            </div>
+            <button type="submit" class="btn btn-danger">Do you want to delete?</button>
+        </form>
+    </div>
+}
+
+

@@ -1,0 +1,28 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Manage/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+
+    <h1>Edit</h1>
+    <form method="post">
+
+        <div class="form-group">
+            <label asp-for="@Model.Name"></label>
+            <input class="form-control" asp-for="@Model.Name">
+            <span asp-validation-for="@Model.Name" class="text-danger"></span>
+            <label asp-for="@Model.Icon"></label>
+            <input class="form-control" asp-for="@Model.Icon">
+            <span asp-validation-for="@Model.Icon" class="text-danger"></span>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
